@@ -77,13 +77,13 @@ Either use go install OR place the nameapi folder in your project and import nam
 |GetVanityNameserver | ***Complete***
 |CreateVanityNameserver | ***Complete***
 |UpdateVanityNameserver | ***Complete***
-|DeleteVanityNameserver | Incomplete
-|SearchStream | Incomplete
+|DeleteVanityNameserver | ***Complete***
 |Transfer Model | Incomplete
 |ListTransfers | Incomplete
 |GetTransfer | Incomplete
 |CreateTransfer | Incomplete
 |CancelTransfer | Incomplete
+|SearchStream | Incomplete
 
 
 ### Examples

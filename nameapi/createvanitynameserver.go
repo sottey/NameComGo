@@ -4,28 +4,28 @@ import (
     "encoding/json"
 )
 
-/// CreateVanitNameserver Models
-type CreateVanitNameserverRequest struct {
+/// CreateVanityNameserver Models
+type CreateVanityNameserverRequest struct {
     VanityServerData VanityNameserver `json:"vanityNameserver"`
     Url string
     Config Configuration
     Method string
 }
 
-// CreateVanitNameserver Accessors
-func (h *CreateVanitNameserverRequest) GetConfig() Configuration {
+// CreateVanityNameserver Accessors
+func (h *CreateVanityNameserverRequest) GetConfig() Configuration {
     return h.Config
 }
-func (h *CreateVanitNameserverRequest) GetMethod() string {
+func (h *CreateVanityNameserverRequest) GetMethod() string {
     return h.Method
 }
-func (h *CreateVanitNameserverRequest) GetUrl() string {
+func (h *CreateVanityNameserverRequest) GetUrl() string {
     return h.Url
 }
 
-// CreateVanitNameserver Methods
+// CreateVanityNameserver Methods
 func CreateVanityNameserver(c Configuration, vanityServer VanityNameserver) NameResponse {
-    myCall := new(CreateVanitNameserverRequest)
+    myCall := new(CreateVanityNameserverRequest)
     myCall.Url = c.BaseURL + "/domains/" + vanityServer.DomainName + "/vanity_nameservers"
     myCall.Config = c
     myCall.Method = "POST"

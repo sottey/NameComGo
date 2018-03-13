@@ -148,6 +148,9 @@ func main() {
     // Get specific Vanity Server entry for a domain you have registered
     // examples.GetVanityNameserverExample()
 
-    // Get specific Vanity Server entry for a domain you have registered
+    // Update specific Vanity Server entry for a domain you have registered
     // examples.UpdateVanityNameserverExample()
+    
+    // Delete specific Vanity Server entry for a domain you have registered
+    examples.DeleteVanityNameserverExample()
 }
