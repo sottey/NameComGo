@@ -14,6 +14,19 @@ All unit tests are in separate files in the ./nameapi/tests directory
 
 ./main.go contains calls for all the example methods which are contained in the examples directory
 
+### Prerequisites
+
+You will need a name.com account. Once you have that, log in and go to [this link](https://www.name.com/account/settings/api) to set up your api tokens.
+
+Once you have the tokens, set the following environmental variables (you can change the var names if you like by changing the entries in ./nameapi/config.go)   :
+nameuser=[prod user name]
+nametoken=[prod token]
+nametestuser=[test user name]
+nametesttoken=[test token]
+
+### Installing
+
+Either use go install OR place the nameapi folder in your project and import namecomgo/nameapi
 
 ## Call Status
 
@@ -72,15 +85,6 @@ All unit tests are in separate files in the ./nameapi/tests directory
 |CreateTransfer | Incomplete
 |CancelTransfer | Incomplete
 
-### Prerequisites
-
-You will need a name.com account. Once you have that, log in and go to [this link](https://www.name.com/account/settings/api) to set up your api tokens.
-
-Once you have the tokens, place them in the appropriate locations in ./nameapi/config.go
-
-### Installing
-
-Either use go install OR place the nameapi folder in your project and import namecomgo/nameapi
 
 ### Examples
 
