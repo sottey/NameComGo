@@ -76,7 +76,7 @@ Either use go install OR place the nameapi folder in your project and import nam
 |ListVanityNameservers | ***Complete***
 |GetVanityNameserver | ***Complete***
 |CreateVanityNameserver | ***Complete***
-|UpdateVanityNameserver | Incomplete
+|UpdateVanityNameserver | ***Complete***
 |DeleteVanityNameserver | Incomplete
 |SearchStream | Incomplete
 |Transfer Model | Incomplete
