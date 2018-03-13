@@ -90,6 +90,12 @@ type VanityNameserver struct {
     IPs []string `json:"ips"`
 }
 
+type Transfer struct {
+    DomainName string `json:"domainName"`
+    Email string `json:"email"`
+    Status string `json:"status"`
+}
+
 /// Interfaces
 type IRequest interface {
     GetUrl() string

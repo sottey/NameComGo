@@ -152,5 +152,8 @@ func main() {
     // examples.UpdateVanityNameserverExample()
     
     // Delete specific Vanity Server entry for a domain you have registered
-    examples.DeleteVanityNameserverExample()
+    // examples.DeleteVanityNameserverExample()
+    
+    // List all transfers in the account
+    examples.ListTransfersExample()
 }
