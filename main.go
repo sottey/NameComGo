@@ -27,7 +27,7 @@ func main() {
     
     // ////////////////////////////////
     // Retrieve transfer auth code for a registered domain in your account
-    examples.GetAuthCodeForDomainExample()
+    // examples.GetAuthCodeForDomainExample()
     
     // ////////////////////////////////
     // Search for unregistered domains using a keyword
@@ -162,4 +162,7 @@ func main() {
     
     // Create a Transfer in the account
     // examples.CreateTransferExample()
+    
+    // Cancel a Transfer in the account
+    // examples.CancelTransferExample()
 }

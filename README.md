@@ -82,7 +82,7 @@ Either use go install OR place the nameapi folder in your project and import nam
 |ListTransfers | ***Complete***
 |GetTransfer | ***Complete***
 |CreateTransfer | ***Complete*** (Returns 501: Unimplemented)
-|CancelTransfer | Incomplete
+|CancelTransfer | ***Complete***
 |SearchStream | Incomplete
 
 
