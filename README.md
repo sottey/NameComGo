@@ -80,7 +80,7 @@ Either use go install OR place the nameapi folder in your project and import nam
 |DeleteVanityNameserver | ***Complete***
 |Transfer Model | ***Complete***
 |ListTransfers | ***Complete***
-|GetTransfer | Incomplete
+|GetTransfer | ***Complete***
 |CreateTransfer | Incomplete
 |CancelTransfer | Incomplete
 |SearchStream | Incomplete

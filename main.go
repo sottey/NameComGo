@@ -19,7 +19,7 @@ import (
 func main() {
     // ////////////////////////////////
     // Simple server "Hello"
-    // examples.HelloExample()
+    examples.HelloExample()
     
     // ////////////////////////////////
     // List all domains in your account
@@ -155,5 +155,8 @@ func main() {
     // examples.DeleteVanityNameserverExample()
     
     // List all transfers in the account
-    examples.ListTransfersExample()
+    // examples.ListTransfersExample()
+    
+    // Get a specific Transfer in the account
+    // examples.GetTransferExample()
 }
