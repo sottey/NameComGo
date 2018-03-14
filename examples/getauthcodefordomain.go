@@ -11,7 +11,7 @@ func GetAuthCodeForDomainExample() {
     c  := namecomgo.GetConfig("test")
     
     // test data
-    domainName := "any2.org"
+    domainName := "any99.org"
     
     // Create a response object
     var ret namecomgo.GetAuthCodeForDomainResponse
