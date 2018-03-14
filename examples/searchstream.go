@@ -6,8 +6,8 @@ import (
     namecomgo "namecomgo/nameapi"
 )
 
-func SearchExample() {
-    fmt.Println("Executing Search() example...\n")
+func SearchStreamExample() {
+    fmt.Println("Executing SearchStream() example...\n")
     
     // Get the configuration details (set in config.go... username, token, etc.)
     c  := namecomgo.GetConfig("test")

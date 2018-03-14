@@ -7,7 +7,7 @@ import (
 )
 
 
-func TestSearch(t *testing.T) {
+func TestSearchStream(t *testing.T) {
     c  := nameapi.GetConfig("test")
     c.Debug = false
     
@@ -21,9 +21,9 @@ func TestSearch(t *testing.T) {
     
     var ret nameapi.SearchResults
     var jsonErr = json.Unmarshal(resp, &ret)
-    nameapi.Check("Error in SearchStream(): ", jsonErr)
+    nameapi.Check("Error in Search(): ", jsonErr)
     
     if nameResponse.StatusCode != 200 {
-        t.Errorf("Bad response from SearchStream(): Non 200 Status Code, Status: %v, Message: %v", nameResponse.StatusCode, nameResponse.Body)
+        t.Errorf("Bad response from Search(): Non 200 Status Code, Status: %v, Message: %v", nameResponse.StatusCode, nameResponse.Body)
     }
 }

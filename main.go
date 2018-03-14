@@ -19,7 +19,7 @@ import (
 func main() {
     // ////////////////////////////////
     // Simple server "Hello"
-    // examples.HelloExample()
+    examples.HelloExample()
     
     // ////////////////////////////////
     // List all domains in your account
@@ -32,6 +32,9 @@ func main() {
     // ////////////////////////////////
     // Search for unregistered domains using a keyword
     // examples.SearchExample()
+    
+    // Executes a search returning results as retrieved from the registry
+    // examples.SearchStreamExample()
     
     // ////////////////////////////////
     // Check the availability of 1-n domain names (NOTE: Name's API needs domain names

@@ -13,6 +13,47 @@ type Domain struct {
     RenewalPrice float64 `json:renewalPrice"`
 }
 
+
+/////////////////////////////////
+// These live here because they are shared by search and search stream
+type SearchRequest struct {
+    Timeout int32 `json:"timeout,omitempty"`
+    Keyword string `json:"keyword,omitempty"`
+    TLDFilter []string `json:"tldFilter,omitempty"`
+    PromoCode string `json:"promoCode,omitempty"`
+    url string
+    config Configuration
+    method string
+    
+}
+
+type SearchResults struct {
+    Responses []SearchResponse `json:"results"`
+}
+
+type SearchResponse struct {
+    DomainName string `json:"domainName"`
+    Sld string `json:"tld"`
+    Tld string `json:"sld"`
+    Purchasable bool `json:"purchasable"`
+    Premium bool `json:"premium"`
+    PurchasePrice float64 `json:"purchasePrice"`
+    PurchaseType string `json:"purchaseType"`
+    RenewalPrice float64 `json:"renewalPrice"`
+}
+
+// Search Accessors
+func (h *SearchRequest) GetConfig() Configuration {
+    return h.config
+}
+func (h *SearchRequest) GetMethod() string {
+    return h.method
+}
+func (h *SearchRequest) GetUrl() string {
+    return h.url
+}
+/////////////////////////////////
+
 type PurchaseDetails struct {
     DomainObj Domain `json:"domain"`
     PurchasePrice float64 `json:"purchasePrice"`

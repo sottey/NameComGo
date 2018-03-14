@@ -7,9 +7,9 @@ import (
 /// Search Models are in objects.go
 
 // Search Methods
-func Search(c Configuration, keyword string, tldFilter []string, timeout int32, promoCode string) NameResponse {
+func SearchStream(c Configuration, keyword string, tldFilter []string, timeout int32, promoCode string) NameResponse {
     myCall := new(SearchRequest)
-    myCall.url = c.BaseURL + "/domains:search"
+    myCall.url = c.BaseURL + "/domains:searchStream"
     myCall.config = c
     myCall.method = "POST"
     myCall.Keyword = keyword

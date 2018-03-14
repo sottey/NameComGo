@@ -57,6 +57,7 @@ Either use go install OR place the nameapi folder in your project and import nam
 |UnlockDomain | ***Complete***
 |CheckAvailability | ***Complete***
 |Search | ***Complete***
+|SearchStream | ***Complete***
 |Hello | ***Complete***
 |Urlforwarding Model | ***Complete***
 |ListURLForwardings | ***Complete***
@@ -81,9 +82,8 @@ Either use go install OR place the nameapi folder in your project and import nam
 |Transfer Model | ***Complete***
 |ListTransfers | ***Complete***
 |GetTransfer | ***Complete***
-|CreateTransfer | ***Complete*** (Returns 501: Unimplemented)
+|CreateTransfer | ***Complete***
 |CancelTransfer | ***Complete***
-|SearchStream | Incomplete
 
 
 ### Examples

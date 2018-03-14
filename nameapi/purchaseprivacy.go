@@ -32,7 +32,7 @@ func (h *PurchasePrivacyRequest) GetUrl() string {
     return h.url
 }
 
-// GetDomain Methods
+// PurchasePrivacy Methods
 func PurchasePrivacy(c Configuration, domainName string, purchasePrice float64, years int32) NameResponse {
     myCall := new(PurchasePrivacyRequest)
     myCall.DomainName = domainName
