@@ -30,7 +30,7 @@ func GetConfig(mode string) Configuration {
         ret.Username = os.Getenv("nametestuser")
         ret.Token = os.Getenv("nametesttoken")
         ret.BaseURL = "https://api.dev.name.com/v4"
-        ret.Debug = false
+        ret.Debug = true
     }
     
     return ret
